@@ -1,0 +1,25 @@
+{
+  "name": "dr-house",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "mobile",
+    "desktop",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:desktop": "bun run --filter dr-house-desktop tauri dev",
+    "dev:mobile": "bun run --filter dr-house-mobile tauri dev",
+    "build:desktop": "bun run --filter dr-house-desktop tauri build",
+    "build:mobile": "bun run --filter dr-house-mobile tauri build",
+    "dev:backend": "bun run --filter dr-house-backend dev"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  }
+}
