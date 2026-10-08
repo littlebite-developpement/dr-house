@@ -4,6 +4,7 @@ export const hopitaux = pgTable('hopitaux', {
   id: uuid('id').primaryKey().defaultRandom(),
   nom: varchar('nom', { length: 150 }).notNull(),
   adresse: text('adresse').notNull(),
+  email: varchar('email', { length: 100 }),
   telephone: varchar('telephone', { length: 20 }),
   ville: varchar('ville', { length: 100 }).notNull(),
   createdAt: timestamp('created_at', { withTimezone: true }).defaultNow(),

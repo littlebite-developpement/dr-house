@@ -14,7 +14,10 @@
     "dev:mobile": "bun run --filter dr-house-mobile tauri dev",
     "build:desktop": "bun run --filter dr-house-desktop tauri build",
     "build:mobile": "bun run --filter dr-house-mobile tauri build",
-    "dev:backend": "bun run --filter dr-house-backend dev"
+    "dev:backend": "bun run --filter dr-house-backend dev",
+    "install:backend": "bun install --filter dr-house-backend",
+    "install:desktop": "bun install --filter dr-house-desktop",
+    "install:mobile": "bun install --filter dr-house-mobile"
   },
   "devDependencies": {
     "@types/bun": "latest"
