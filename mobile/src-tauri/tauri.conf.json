@@ -13,8 +13,8 @@
     "windows": [
       {
         "title": "dr-house",
-        "width": 800,
-        "height": 600
+        "width": 414,
+        "height": 896
       }
     ],
     "security": {

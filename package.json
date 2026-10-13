@@ -20,9 +20,18 @@
     "install:mobile": "bun install --filter dr-house-mobile"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "cpy-cli": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "framework7": "^9.2.0",
+    "framework7-icons": "^5.0.5",
+    "framework7-svelte": "^9.2.0",
+    "material-icons": "^1.13.12"
   },
   "peerDependencies": {
     "typescript": "^7"
+  },
+  "dependencies": {
+    "framework7": "^9.2.0",
+    "framework7-svelte": "^9.2.0"
   }
 }
