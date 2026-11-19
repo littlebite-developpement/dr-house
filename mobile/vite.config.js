@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import { sveltekit } from "@sveltejs/kit/vite";
 import tailwindcss from "@tailwindcss/vite";
-// @ts-expect-error type error without @types/node package
 import process from "node:process";
 const host = process.env.TAURI_DEV_HOST;
 
@@ -13,7 +12,7 @@ export default defineConfig(() => ({
   // node_modules; esbuild can't pre-bundle them (no loader for .svelte),
   // so they must go through the normal plugin pipeline instead.
   optimizeDeps: {
-    exclude: ["lucide-svelte", "@humanspeak/svelte-motion"],
+    exclude: ["lucide-svelte", "@humanspeak/svelte-motion", "layerchart"],
   },
 
   // Vite options tailored for Tauri development and only applied in `tauri dev` or `tauri build`

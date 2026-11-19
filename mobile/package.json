@@ -16,7 +16,9 @@
     "last 5 Chrome versions",
     "last 5 Firefox versions"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "layerchart": "^2.8.1"
+  },
   "devDependencies": {
     "@humanspeak/svelte-motion": "^2.0.1",
     "@sveltejs/adapter-static": "^3.0.10",

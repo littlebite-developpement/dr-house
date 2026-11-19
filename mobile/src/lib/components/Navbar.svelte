@@ -3,7 +3,10 @@
 	import { goto } from '$app/navigation';
 	import { page } from '$app/state';
 	import { motion } from '@humanspeak/svelte-motion';
-	import { House, Stethoscope, User, Users } from 'lucide-svelte';
+	import House from 'lucide-svelte/icons/house';
+	import Stethoscope from 'lucide-svelte/icons/stethoscope';
+	import User from 'lucide-svelte/icons/user';
+	import Users from 'lucide-svelte/icons/users';
 
 	/* ── elastic, as numbers a person can hold ─────────────
 	   Every elastic knob is 0..100 on the outside and real
@@ -99,7 +102,7 @@
 	let phase = $state<'idle' | 'stretch' | 'settle'>('idle');
 
 	let track: HTMLElement;
-	const refs: Record<string, HTMLButtonElement | null> = {};
+	let refs = $state<Record<string, HTMLButtonElement | null>>({});
 	let indRef: Ind | null = null;
 	let timer: ReturnType<typeof setTimeout> | undefined;
 
@@ -362,7 +365,10 @@
 		opacity: 0.72;
 	}
 
-	:global(.gnav-item)[data-active='true'] {
+	/* Entirely :global: the .gnav-item elements are rendered by the
+	   motion.button child component, so Svelte cannot scope-match a
+	   bare [data-active] compound and would prune it from the CSS. */
+	:global(.gnav-item[data-active='true']) {
 		opacity: 1;
 		color: var(--color-primary, var(--ink));
 	}

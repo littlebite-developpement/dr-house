@@ -972,9 +972,9 @@
     "semantic_hash": "5ca3e0546ec943e0028b51199919a9d9"
   },
   "mobile/package.json": {
-    "mtime": 1791919282.1925962,
-    "seen": 1791925919.942533,
-    "ast_hash": "57ae6c319751065adee39c9bd9da608b",
+    "mtime": 1792361699.5005965,
+    "seen": 1795019645.7459896,
+    "ast_hash": "2d46f684ebf74b4c8dd621fc688d3fd2",
     "semantic_hash": ""
   },
   "mobile/src-tauri/Cargo.toml": {
@@ -1020,9 +1020,9 @@
     "semantic_hash": "6fcc01a9e86b5ac2814ef7b2e6831657"
   },
   "mobile/src/routes/+page.svelte": {
-    "mtime": 1791919774.5515928,
-    "seen": 1791925919.9425697,
-    "ast_hash": "2fc555775638e5e794dfb74b143a0690",
+    "mtime": 1794938509.9739866,
+    "seen": 1795019645.7460299,
+    "ast_hash": "87a1dad6ed59704f0d765424e6a9ce53",
     "semantic_hash": ""
   },
   "mobile/svelte.config.js": {
@@ -1038,15 +1038,15 @@
     "semantic_hash": "40cafe82106feb1b2c7ab177fdd60406"
   },
   "mobile/vite.config.js": {
-    "mtime": 1791911678.866384,
-    "seen": 1791925919.9425871,
-    "ast_hash": "a03f09c9c83cf2fd2a67e7ff6a1cb982",
+    "mtime": 1792365436.7607732,
+    "seen": 1795019645.7460444,
+    "ast_hash": "2817f559783cfdbcd3a580efa90177dd",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791476701.7548337,
-    "seen": 1791925919.942593,
-    "ast_hash": "2cb138710cc6e589684845d103bd2ff9",
+    "mtime": 1792364672.3894353,
+    "seen": 1795019645.74605,
+    "ast_hash": "ebfbf1e2fc7924c7d42213ccdd262868",
     "semantic_hash": ""
   },
   "tsconfig.json": {
@@ -1056,10 +1056,10 @@
     "semantic_hash": "b1f6bb4129739fd7ec8529de1ccf7216"
   },
   "README.md": {
-    "mtime": 1791298099.383741,
-    "seen": 1791467158.0223784,
-    "ast_hash": "7b586521d1dd5a135b360ee72adacf75",
-    "semantic_hash": "7b586521d1dd5a135b360ee72adacf75"
+    "mtime": 1791927546.5315423,
+    "seen": 1795019645.7460544,
+    "ast_hash": "d002027d8239a2f51d0128ecb9c6824e",
+    "semantic_hash": ""
   },
   "backend/README.md": {
     "mtime": 1790603960.3531532,
@@ -1092,9 +1092,9 @@
     "semantic_hash": "2787283facf1123fe6c06de5e0de8013"
   },
   "mobile/src/app.html": {
-    "mtime": 1791925759.5050566,
-    "seen": 1791925919.9426892,
-    "ast_hash": "809e0047b612f903565837356058b559",
+    "mtime": 1791926114.9722877,
+    "seen": 1795019645.7460687,
+    "ast_hash": "70a44c965a2b22121f22e4ba277e4914",
     "semantic_hash": ""
   },
   "mobile/src-tauri/icons/128x128.png": {
@@ -1212,15 +1212,15 @@
     "semantic_hash": ""
   },
   "mobile/src/lib/components/Navbar.svelte": {
-    "mtime": 1791919242.319824,
-    "seen": 1791925919.94256,
-    "ast_hash": "b60aae504b4556ac4460885468caed65",
+    "mtime": 1794940786.8656795,
+    "seen": 1795019645.746022,
+    "ast_hash": "780541dc858efe25e7115be69b59b88c",
     "semantic_hash": ""
   },
   "mobile/src/routes/+layout.svelte": {
-    "mtime": 1791925759.5060565,
-    "seen": 1791925919.942563,
-    "ast_hash": "665773c202827fab023fad1e362e8daf",
+    "mtime": 1794938518.1336486,
+    "seen": 1795019645.7460244,
+    "ast_hash": "9ebc88a9e75ce1070f5624af8aaa0a55",
     "semantic_hash": ""
   },
   "mobile/src/routes/medical/+page.svelte": {
@@ -1353,6 +1353,18 @@
     "mtime": 1791300214.6418555,
     "seen": 1791925919.9427352,
     "ast_hash": "8e3a10e157f75ada21ab742c022d5430",
+    "semantic_hash": ""
+  },
+  "mobile/src/lib/components/ActivityChart.svelte": {
+    "mtime": 1794939566.5641778,
+    "seen": 1795019645.7460155,
+    "ast_hash": "d4bb8214486f4f1c51bc5c0b858d2daa",
+    "semantic_hash": ""
+  },
+  "mobile/src/lib/components/GlassContainer.svelte": {
+    "mtime": 1794941500.9215379,
+    "seen": 1795019645.7460186,
+    "ast_hash": "008cbab4f554a7fb548279a4052745f5",
     "semantic_hash": ""
   }
 }
