@@ -1,6 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-	import { Bell, Cross, Moon, Sun } from 'lucide-svelte';
+	import Bell from 'lucide-svelte/icons/bell';
+	import Cross from 'lucide-svelte/icons/cross';
+	import Moon from 'lucide-svelte/icons/moon';
+	import Sun from 'lucide-svelte/icons/sun';
 	import Navbar from '$lib/components/Navbar.svelte';
 
 	let { children } = $props();
