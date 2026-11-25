@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" role="img" aria-label="Suivez votre glycémie">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#065f46" />
+      <stop offset="1" stop-color="#16a34a" />
+    </linearGradient>
+  </defs>
+  <rect width="780" height="380" fill="url(#bg)" />
+  <circle cx="670" cy="60" r="150" fill="#ffffff" opacity="0.08" />
+  <circle cx="120" cy="380" r="130" fill="#ffffff" opacity="0.06" />
+  <polyline points="60 305 180 305 220 245 270 335 320 270 370 305 500 305" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" opacity="0.85" />
+  <path d="M612 88c0 0 58 66 58 104a58 58 0 0 1-116 0c0-38 58-104 58-104z" fill="#ffffff" opacity="0.92" />
+  <text x="60" y="118" fill="#ffffff" font-family="Inter, 'Segoe UI', sans-serif" font-size="44" font-weight="700">Suivez votre glycémie</text>
+  <text x="60" y="166" fill="#ffffff" opacity="0.85" font-family="Inter, 'Segoe UI', sans-serif" font-size="22">Des relevés clairs, chaque jour.</text>
+</svg>

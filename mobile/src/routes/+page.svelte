@@ -1,5 +1,5 @@
 <script lang="ts">
-	import GlassContainer from '$lib/components/GlassContainer.svelte';
+	import Container from '$lib/components/Container.svelte';
 	import ActivityChart from '$lib/components/ActivityChart.svelte';
 	// Subpath imports: the `lucide-svelte` umbrella barrel re-exports ~1686
 	// icons, which Vite can't pre-bundle (it ships one .svelte per icon) and
@@ -43,7 +43,7 @@
 	</div>
 
 	<!-- activity chart -->
-	<GlassContainer class="p-6" reveal delay={100}>
+	<Container class="p-6" reveal delay={100}>
 		<ActivityChart
 			steps={6842}
 			maxSteps={10000}
@@ -55,5 +55,5 @@
 			strokeWidth={12}
 			gap={6}
 		/>
-	</GlassContainer>
+	</Container>
 </div>

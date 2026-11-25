@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 380" role="img" aria-label="Mangez équilibré">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#14532d" />
+      <stop offset="1" stop-color="#65a30d" />
+    </linearGradient>
+  </defs>
+  <rect width="780" height="380" fill="url(#bg)" />
+  <circle cx="660" cy="330" r="160" fill="#ffffff" opacity="0.07" />
+  <circle cx="90" cy="40" r="120" fill="#ffffff" opacity="0.06" />
+  <g opacity="0.92">
+    <path d="M618 132c42 0 76 36 76 80s-34 88-76 88-76-44-76-88 34-80 76-80z" fill="#ffffff" />
+    <path d="M618 132c-10-22-4-44 12-56 16 14 20 36 8 56z" fill="#ecfccb" />
+    <path d="M622 128c-14-8-20-24-16-40 16 4 26 18 24 36z" fill="#bef264" />
+  </g>
+  <text x="60" y="118" fill="#ffffff" font-family="Inter, 'Segoe UI', sans-serif" font-size="44" font-weight="700">Mangez équilibré</text>
+  <text x="60" y="166" fill="#ffffff" opacity="0.85" font-family="Inter, 'Segoe UI', sans-serif" font-size="22">Des repas simples et variés.</text>
+</svg>
