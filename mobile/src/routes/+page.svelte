@@ -98,7 +98,7 @@
 					<p class="font-medium text-base-content truncate">{row.label}</p>
 					<p class="text-sm text-base-content/60 truncate">{row.note}</p>
 				</div>
-				<ChevronRight class="w-5 h-5 text-base-content/30 flex-shrink-0" />
+				<ChevronRight class="w-5 h-5 text-base-content/30 shrink-0" />
 			</Container>
 		{/each}
 	</div>

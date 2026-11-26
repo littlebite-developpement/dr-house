@@ -129,7 +129,7 @@
 				<img
 					src={slide.src}
 					alt={slide.alt}
-					class="aspect-[780/380] w-full shrink-0 object-cover"
+					class="aspect-780/380 w-full shrink-0 object-cover"
 					draggable="false"
 				/>
 			{/each}
