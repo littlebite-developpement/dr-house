@@ -9,6 +9,9 @@
 	let { children } = $props();
 
 	let dark = $state(false);
+	/* real header height (safe-area included) is published as a CSS variable
+	   so overlays such as Sheet can stop right below it */
+	let headerHeight = $state(0);
 
 	function toggleTheme() {
 		dark = !dark;
@@ -20,9 +23,15 @@
 </script>
 
 <!-- mobile app shell: header on top, scrollable content, floating tab bar pinned to the bottom -->
-<div class="flex h-dvh flex-col bg-base-100 text-base-content">
-	<header class="navbar sticky top-0 z-20 border-b border-base-200 bg-base-100/70 px-4 backdrop-blur-md"
-		style="padding-top: calc(0.75rem + env(safe-area-inset-top, 0px))">
+<div
+	class="flex h-dvh flex-col bg-base-100 text-base-content"
+	style="--app-header: {headerHeight}px"
+>
+	<header
+		bind:clientHeight={headerHeight}
+		class="navbar sticky top-0 z-20 border-b border-base-200 bg-base-100/70 px-4 backdrop-blur-md"
+		style="padding-top: calc(0.75rem + env(safe-area-inset-top, 0px))"
+	>
 		<div class="flex-1">
 			<div class="flex aspect-square w-10 items-center gap-2">
 				<img src="/favicon.png" alt="Logo" />

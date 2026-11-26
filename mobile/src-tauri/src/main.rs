@@ -5,8 +5,10 @@ fn main() {
     #[cfg(target_os = "linux")]
     {
         std::env::set_var("GDK_BACKEND", "wayland");
-        std::env::set_var("WEBKIT_DISABLE_DMABUF_RENDERER", "1");
-        std::env::set_var("WEBKIT_DISABLE_COMPOSITING_MODE", "1");
+        // Do NOT set WEBKIT_DISABLE_COMPOSITING_MODE or
+        // WEBKIT_DISABLE_DMABUF_RENDERER here: both turn off WebKitGTK's
+        // accelerated compositing, which silently disables every
+        // `backdrop-filter` (header, navbar, Modal, Sheet glass blur).
         std::env::set_var("GTK_CSD", "1");
     }
     dr_house_lib::run()

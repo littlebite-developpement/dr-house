@@ -35,7 +35,7 @@
 </script>
 
 <div class="bar-well">
-	<nav class="gnav" aria-label="Navigation principale">
+	<nav class="gnav backdrop-blur-sm" aria-label="Navigation principale">
 		{#each ITEMS as { key, label, href, Icon } (key)}
 			<a
 				href={href}

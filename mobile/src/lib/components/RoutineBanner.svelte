@@ -98,7 +98,7 @@
 	}
 </script>
 
-<section aria-roledescription="carrousel" aria-label="Annonces">
+<section aria-label="Annonces">
 	<div class="mb-3 flex justify-center gap-2">
 		{#each slides as slide, i (slide.id)}
 			<button
@@ -113,19 +113,18 @@
 		{/each}
 	</div>
 
-	<div class="overflow-hidden rounded-[28px]">
-		<div
-			bind:this={viewport}
-			class="track"
-			class:dragging
-			style:transform={shift}
-			role="group"
-			aria-roledescription="diapositive"
-			onpointerdown={onPointerDown}
-			onpointermove={onPointerMove}
-			onpointerup={(e) => onPointerEnd(e, true)}
-			onpointercancel={(e) => onPointerEnd(e, false)}
-		>
+	<div
+		bind:this={viewport}
+		class="carousel overflow-hidden rounded-[28px]"
+		class:dragging
+		role="group"
+		aria-roledescription="carrousel"
+		onpointerdown={onPointerDown}
+		onpointermove={onPointerMove}
+		onpointerup={(e) => onPointerEnd(e, true)}
+		onpointercancel={(e) => onPointerEnd(e, false)}
+	>
+		<div class="track" class:dragging style:transform={shift}>
 			{#each slides as slide (slide.id)}
 				<img
 					src={slide.src}
@@ -139,19 +138,28 @@
 </section>
 
 <style>
-	.track {
-		display: flex;
+	/* the stage is the element that receives the gestures: it never moves,
+	   so every visible slide is always under the pointer */
+	.carousel {
 		cursor: grab;
-		will-change: transform;
 		touch-action: pan-y;
 		user-select: none;
 		-webkit-user-select: none;
+		-webkit-touch-callout: none;
+	}
+
+	.carousel.dragging {
+		cursor: grabbing;
+	}
+
+	.track {
+		display: flex;
+		will-change: transform;
 		transition: transform 340ms cubic-bezier(0.22, 1, 0.36, 1);
 	}
 
 	/* no easing while the finger is down — the slide must track it 1:1 */
 	.track.dragging {
-		cursor: grabbing;
 		transition: none;
 	}
 

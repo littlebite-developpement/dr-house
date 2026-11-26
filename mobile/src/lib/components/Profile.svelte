@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { SquarePen, ChevronRight } from 'lucide-svelte';
+	import ChevronRight from 'lucide-svelte/icons/chevron-right';
+	import SquarePen from 'lucide-svelte/icons/square-pen';
 
 	// À remplacer par les vraies données lors du branchement
 	const utilisateur = {
@@ -18,10 +19,10 @@
 		.join('');
 
 	const menu = [
-		{ label: 'Compte', href: '#' },
-		{ label: 'Information personnelle', href: '#' },
-		{ label: "Paramètre de l'application", href: '#' },
-		{ label: "Conditions d'utilisateur", href: '#' }
+		{ label: 'Compte' },
+		{ label: 'Information personnelle' },
+		{ label: "Paramètre de l'application" },
+		{ label: "Conditions d'utilisateur" }
 	];
 </script>
 
@@ -29,9 +30,9 @@
 	<!-- Bouton modifier -->
 	<div class="flex items-center justify-between">
         <h1 class="text-2xl font-bold">Profile</h1>
-        <a href="#" class="btn btn-ghost btn-circle btn-sm" aria-label="Modifier le profil">
+        <button type="button" class="btn btn-ghost btn-circle btn-sm" aria-label="Modifier le profil">
             <SquarePen class="size-6" />
-        </a>
+        </button>
     </div>
 
 	<!-- Identité -->
@@ -66,13 +67,13 @@
 	<!-- Menu -->
 	<nav class="mt-8 flex flex-col gap-4" aria-label="Paramètres du profil">
 		{#each menu as item (item.label)}
-			<a
-				href={item.href}
-				class="flex h-[76px] items-center justify-between rounded-3xl bg-base-content/30 px-6 text-lg text-base-100 transition active:scale-[0.98]"
+			<button
+				type="button"
+				class="flex h-[76px] w-full items-center justify-between rounded-3xl bg-base-content/30 px-6 text-left text-lg text-base-100 transition active:scale-[0.98]"
 			>
 				<span>{item.label}</span>
 				<ChevronRight class="size-5 opacity-80" />
-			</a>
+			</button>
 		{/each}
 	</nav>
 </section>
