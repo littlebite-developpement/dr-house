@@ -1,4 +1,12 @@
-<div class="p-4 space-y-2">
-	<h1 class="text-2xl font-bold">Medical</h1>
-	<p class="text-base-content/60">Medical section</p>
+<script lang="ts">
+	import RoutineBanner from '$lib/components/RoutineBanner.svelte';
+	import Medicale from '$lib/components/Medicale.svelte';
+</script>
+
+<div class="mx-auto flex min-h-full w-full max-w-md flex-col px-5 pb-28 pt-3">
+	<RoutineBanner />
+
+	<div class="my-4 h-px w-full bg-base-content/10"></div>
+
+	<Medicale />
 </div>
